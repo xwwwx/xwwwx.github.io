@@ -1,0 +1,186 @@
+<html>
+	<head>
+		<title>APP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="CSS/basic.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!--HomePage-->
+		<div data-role="page" id="HomePage">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>首頁</h1>
+			</div>
+
+			<div data-role="main" class="ui-content" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#PageOne" class="NextPage" data-iconpos="left" data-icon="home">取得JSON資料</a></li>
+						<li><a href="#PageTwo" class="NextPage" data-iconpos="left" data-icon="location">取得定位位置並標註地圖</a></li>
+						<li><a href="#PageThree" class="NextPage" data-iconpos="left" data-icon="location">標註JSON資料於地圖</a></li>
+						<li><a href="#PageFour" class="NextPage" data-iconpos="left" data-icon="location">標註JSON資料於地圖以群組呈現</a></li>
+						<li><a href="#PageFive" class="NextPage" data-iconpos="left" data-icon="location">標註JSON資料於地圖以數字呈現</a></li>
+						<li><a href="#PageSix" class="NextPage" data-iconpos="left" data-icon="location">以距離控制標註資料</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--HomePageEnd-->
+
+		<!--功能1-->
+		<div data-role="page" id="PageOne">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>取得JSON資料</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				<div id="PageOneShowJson"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能2-->
+
+		<!--功能2-->
+		<div data-role="page" id="PageTwo">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>取得定位位置並標註地圖</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				<div id="PageTwoMap"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能2-->
+
+		<!--功能3-->
+		<div data-role="page" id="PageThree">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>標註JSON資料於地圖</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				<div id="PageThreeMap"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能3-->
+
+		<!--功能4-->
+		<div data-role="page" id="PageFour">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>標註JSON資料於地圖以群組呈現</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				<div id="PageFourMap"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能4-->
+
+		<!--功能5-->
+		<div data-role="page" id="PageFive">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>標註JSON資料於地圖以數字呈現</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				<div id="PageFiveMap"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能5-->
+
+		<!--功能6-->
+		<div data-role="page" id="PageSix">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>以距離控制標註資料</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#HomePage" class="BackPage" data-iconpos="left" data-icon="home">首頁</a></li>
+					</ul>
+				</div>
+				距離(KM):<input type="range" name="points" id="points" value="25" min="0" max="50">
+				<div id="PageSixMap"></div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--功能6-->
+
+		<!--JumpPageOne-->
+		<div data-role="page" data-dialog="true" id="JumpPageOne"> 
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>彈出視窗</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<a href="#HomePage">首頁</a>
+			</div>
+ 
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>底部</h1>
+			</div>
+		</div> 
+		<!--JumpPageOneEnd-->
+
+
+		<script src="JS/Main.js"></script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32Rs2dQdcKbJToKj_-130btg1znFy4Y8&libraries=visualization,places">
+		</script>
+  		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	</body>
+</hmtl>
